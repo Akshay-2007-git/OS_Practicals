@@ -45,6 +45,7 @@ The program is available in:
 
 ```bash
 gcc wait_waitpid_demo.c -o wait_waitpid_demo
+```
 
 ## Practical 5 – Inter-Process Communication Using Pipes
 
