@@ -46,3 +46,32 @@ The program is available in:
 ```bash
 gcc wait_waitpid_demo.c -o wait_waitpid_demo
 
+## Practical 5 – Inter-Process Communication Using Pipes
+
+### Program 1: Producer-Consumer Communication Using Anonymous Pipe
+
+#### Objective
+
+Implement a producer-consumer communication system using an anonymous pipe, where the parent process acts as the producer and the child process acts as the consumer.
+
+#### Concepts Covered
+
+- `pipe()`
+- `fork()`
+- `read()`
+- `write()`
+- Anonymous pipe
+- Parent-child process communication
+- `wait()`
+- Communication time measurement
+- Throughput calculation
+- `clock_gettime()`
+
+#### Program
+
+`Practical-5/prog5.c`
+
+#### Compilation
+
+```bash
+gcc prog5.c -o prog5
