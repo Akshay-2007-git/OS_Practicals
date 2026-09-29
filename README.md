@@ -77,3 +77,30 @@ Implement a producer-consumer communication system using an anonymous pipe, wher
 ```bash
 gcc prog5.c -o prog5
 ```
+## Practical 6 – Inter-Process Communication and Signal Handling
+
+- Implemented **FIFO (Named Pipe) based Inter-Process Communication** using a FIFO server and client.
+- Implemented **Linux signal handling** using `SIGINT`, `SIGTERM`, and `SIGUSR1`.
+- Programs:
+  - `fifo_server.c`
+  - `fifo_client.c`
+  - `signal_handler.c`
+
+## Practical 7 – Process Memory and Address Space
+
+- Studied the **Linux process address space** and different memory regions.
+- Demonstrated **Code/Text, Data, BSS, Heap, and Stack** memory segments.
+- Used `/proc/<PID>/maps` and `/proc/<PID>/status` to inspect process memory.
+- Programs:
+  - `memory_layout.c`
+  - `memory_demo.c`
+
+## Practical 8 – Dynamic Memory and Copy-on-Write
+
+- Demonstrated dynamic memory management using **`malloc()`, `calloc()`, `realloc()`, and `free()`**.
+- Used **Valgrind** to detect memory leaks and memory errors.
+- Demonstrated **Copy-on-Write (COW)** behavior using `fork()`.
+- Inspected process memory using Linux `/proc` interfaces.
+- Programs:
+  - `dynamic_memory.c`
+  - `cow_demo.c`
