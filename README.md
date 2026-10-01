@@ -104,3 +104,30 @@ gcc prog5.c -o prog5
 - Programs:
   - `dynamic_memory.c`
   - `cow_demo.c`
+## Practical 9 – File I/O and I/O Redirection
+
+### Objective
+
+Implement file copying using low-level Linux system calls and C standard library I/O, compare their execution time, and demonstrate input/output redirection using `dup2()`.
+
+### Programs
+
+#### 1. Low-Level File Copy
+
+Program:
+
+`Practical-9/copy_lowlevel.c`
+
+Uses:
+
+- `open()`
+- `read()`
+- `write()`
+- `lseek()`
+- `close()`
+
+Compilation:
+
+```bash
+cd Practical-9
+gcc -Wall -Wextra -g copy_lowlevel.c -o copy_lowlevel
