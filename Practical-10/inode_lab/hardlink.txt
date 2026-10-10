@@ -1,0 +1,2 @@
+Linux inode investigation
+Modified through hard link

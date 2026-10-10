@@ -131,3 +131,56 @@ Compilation:
 ```bash
 cd Practical-9
 gcc -Wall -Wextra -g copy_lowlevel.c -o copy_lowlevel
+## Practical 10: Inodes, Links, and File I/O
+
+### Aim
+To investigate Linux inodes, hard links, symbolic links, and file I/O using memory mapping and traditional system calls.
+
+### Experiments
+1. Investigating inode numbers and file metadata using `ls -i`, `ls -li`, `stat`, and `find`.
+2. Creating and comparing hard links and symbolic links.
+3. Demonstrating the behavior of links when the original filename is deleted.
+4. Implementing file modification using `mmap()`, `msync()`, and `munmap()`.
+5. Implementing file modification using `read()`, `write()`, and `lseek()`.
+6. Exploring execution-time comparison between memory-mapped and traditional file I/O.
+
+### Source Files
+- `Practical-10/inode_lab/` — inode and link experiments.
+- `Practical-10/mmap_file.c` — memory-mapped file I/O.
+- `Practical-10/read_write_file.c` — traditional file I/O.
+
+### Compilation
+```bash
+gcc -Wall -Wextra -g mmap_file.c -o mmap_file
+gcc -Wall -Wextra -g read_write_file.c -o read_write_file
+```
+
+## Practical 11: POSIX Threads and Race Conditions
+
+### Aim
+To develop multithreaded C programs using POSIX threads and demonstrate race conditions and mutex-based synchronization.
+
+### Experiments
+1. Demonstrating a race condition using a shared counter.
+2. Protecting a shared counter using a POSIX mutex.
+3. Measuring execution time for the mutex-protected counter.
+
+### Source Files
+- `Practical-11/race_counter.c`
+- `Practical-11/safe_counter.c`
+- `Practical-11/mutex_counter.c`
+
+### Compilation
+```bash
+gcc -Wall -Wextra -g race_counter.c -o race_counter -pthread
+gcc -Wall -Wextra -g safe_counter.c -o safe_counter -pthread
+gcc -Wall -Wextra -O2 -pthread mutex_counter.c -o mutex_counter
+```
+
+### Key Concepts
+- Threads and shared memory
+- `pthread_create()` and `pthread_join()`
+- Race conditions and lost updates
+- Critical sections
+- `pthread_mutex_lock()` and `pthread_mutex_unlock()`
+- Synchronization overhead and execution time
