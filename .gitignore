@@ -1,0 +1,22 @@
+
+# Compiled C executables
+Practical-*/fifo_client
+Practical-*/fifo_server
+Practical-*/signal_handler
+Practical-*/memory_demo
+Practical-*/memory_layout
+Practical-*/cow_demo
+Practical-*/dynamic_memory
+Practical-*/wait_waitpid_demo
+Practical-*/lsgrep
+Practical-*/prog5
+Practical-*/mmap_file
+Practical-*/read_write_file
+Practical-*/race_counter
+Practical-*/safe_counter
+Practical-*/mutex_counter
+
+# Temporary and generated files
+*.o
+*.out
+core
